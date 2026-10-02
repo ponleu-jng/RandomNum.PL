@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-space: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b1326;
+    color: #dae2fd;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-space {
+    font-family: var(--font-space);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbars for cybernetic/quantum interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1326;
+}
+::-webkit-scrollbar-thumb {
+  background: #222a3d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #31394d;
+}
+
+/* Neon Glow utilities */
+.glow-primary {
+  box-shadow: 0 0 24px -4px rgba(99, 102, 241, 0.45);
+}
+.glow-secondary {
+  box-shadow: 0 0 20px -3px rgba(78, 222, 163, 0.35);
+}
+.glow-text-secondary {
+  text-shadow: 0 0 12px rgba(78, 222, 163, 0.5);
+}
+.glow-text-primary {
+  text-shadow: 0 0 16px rgba(192, 193, 255, 0.4);
+}
+.glow-border {
+  box-shadow: 0 0 15px -2px rgba(99, 102, 241, 0.25), inset 0 0 15px -2px rgba(99, 102, 241, 0.1);
+}
+
